@@ -1,23 +1,24 @@
-import logo from './logo.svg';
 import './App.css';
+import Nav from './Containers/Nav'
+import polish from './images/polish.png'
+import italian from './images/italian.png'
+import Header from './Components/Header';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='header'>
+        <div className='polish-bg'>
+          <img src={polish} height={300}></img>
+        </div>
+        <div className='italian-bg'>
+          <img src={italian} height={300}></img>
+        </div>
+      </div>
+      <div className='header-bg'>
+        <Header/>
+        <Nav/>
+      </div>
     </div>
   );
 }
