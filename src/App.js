@@ -18,6 +18,7 @@ function App() {
       <div className='header-bg'>
         <Header/>
         <Nav/>
+        <p>test</p>
       </div>
     </div>
   );
