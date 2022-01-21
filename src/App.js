@@ -1,25 +1,20 @@
 import './App.css';
-import Nav from './Containers/Nav'
-import polish from './images/polish.png'
-import italian from './images/italian.png'
 import Header from './Components/Header';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import RecipesList from './Containers/RecipesList';
+import Recipe from './Components/Recipe';
+
 
 function App() {
   return (
     <div className="App">
-      <div className='header'>
-        <div className='polish-bg'>
-          <img src={polish} height={300}></img>
-        </div>
-        <div className='italian-bg'>
-          <img src={italian} height={300}></img>
-        </div>
-      </div>
-      <div className='header-bg'>
-        <Header/>
-        <Nav/>
-        <p>test</p>
-      </div>
+      <Router>         
+        <Routes>
+          <Route exact path = "/" element = {<Header/>}/>
+          <Route path = "/recipes" element = {<RecipesList/>}/>
+          <Route path = "/recipes/:id" element = {<Recipe/>}/>
+        </Routes>
+      </Router>
     </div>
   );
 }

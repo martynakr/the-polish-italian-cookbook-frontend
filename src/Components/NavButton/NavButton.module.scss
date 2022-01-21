@@ -1,0 +1,15 @@
+.navButton {
+	padding: 20px;
+	background-color: rgb(230, 219, 173);
+	margin: 20px;
+
+	&__text {
+		font-family: "Inter", sans-serif;
+	}
+}
+
+a:visited,
+a:link {
+	color: black;
+	text-decoration: none;
+}

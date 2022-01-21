@@ -1,0 +1,35 @@
+.headerComp {
+	display: flex;
+}
+
+img {
+	padding: 20px;
+}
+
+.polishBg {
+	background-color: #cfdcc9;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.italianBg {
+	background-color: #fff999;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.headerBg {
+	width: 50vw;
+	align-items: center;
+	padding: 30px 60px;
+}
+
+.header {
+	display: flex;
+	flex-direction: column;
+	width: 50vw;
+	justify-content: space-around;
+}
